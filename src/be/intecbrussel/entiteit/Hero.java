@@ -7,14 +7,29 @@ package be.intecbrussel.entiteit;
  */
 public abstract class Hero {
 
-    int age;
-    String alias;
+    protected int age;
+    protected String alias;
+
 
     /*
     Vergeet niet dat deze methode nog een implementatie
     nodig heeft in de subklassen.
     Dit mag een simpele sysout zijn.
      */
+
+
+    public Hero() {
+
+    }
+
+
     public abstract void useSuperPower();
 
+    @Override
+    public String toString() {
+        return "Hero{" +
+                "age=" + age +
+                ", alias='" + alias + '\'' +
+                '}';
+    }
 }

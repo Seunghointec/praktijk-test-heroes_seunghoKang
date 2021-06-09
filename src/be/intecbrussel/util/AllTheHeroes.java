@@ -7,7 +7,7 @@ import be.intecbrussel.entiteit.Hero;
  *
  * Deze klasse krijgen jullie cadeau
  */
-public class AllTheHeroes {
+public class AllTheHeroes{
 
     private Hero[] listOfHeroes;
 
@@ -21,7 +21,7 @@ public class AllTheHeroes {
                 if (listOfHeroes[i] == null) {
                     listOfHeroes[i] = hero;
                     return;
-                } else if (listOfHeroes[i] != null && i == listOfHeroes.length){
+                } else if (listOfHeroes[i] != null && (i+1) == listOfHeroes.length){
                     System.out.println("Sorry no more place in this squad.");
                 }
             }
@@ -42,7 +42,7 @@ public class AllTheHeroes {
     private boolean isHeroTypePresent (Hero hero) {
         for (Hero h: listOfHeroes) {
             if (h != null) {
-                if (h.getClass() == hero.getClass()){
+                if (h.getClass() == hero.getClass()) {
                     return true;
                 }
             }
@@ -54,4 +54,5 @@ public class AllTheHeroes {
     public Hero[] getHeroes () {
         return listOfHeroes;
     }
+
 }
