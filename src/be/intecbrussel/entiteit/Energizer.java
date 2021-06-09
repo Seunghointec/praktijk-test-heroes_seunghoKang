@@ -17,7 +17,7 @@ public class Energizer extends Hero {
 
     @Override
     public String toString() {
-        return "Energizer{} "
+        return "Energizer{"
                 + "age=" + age +
                 ", alias='" + alias + '\'' +
                 "} ";

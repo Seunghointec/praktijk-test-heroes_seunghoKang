@@ -85,7 +85,6 @@ public class HeroApp {
                 fancyLines(55);
             }
         }
-
     }
 
     private static void printHeader() {
@@ -102,5 +101,4 @@ public class HeroApp {
             }
         }
     }
-
 }

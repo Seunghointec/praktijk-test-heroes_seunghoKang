@@ -1,6 +1,7 @@
 package be.intecbrussel.entiteit;
 
 public class ShapeShifter extends Hero {
+
     public ShapeShifter() {
 
     }

@@ -54,5 +54,4 @@ public class AllTheHeroes{
     public Hero[] getHeroes () {
         return listOfHeroes;
     }
-
 }
